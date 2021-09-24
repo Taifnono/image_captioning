@@ -40,7 +40,7 @@ The second approach, which this project uses, is to give the LSTM our entire seq
 - the sequence. the second is just the most recent hidden state
 
 - Add the extra 2nd dimension
-- 
+
 --inputs = torch.cat(inputs).view(len(inputs), 1, -1)
 
 hidden = (torch.randn(1, 1, 3), torch.randn(1, 1, 3)) 
